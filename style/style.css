@@ -10,7 +10,6 @@ html {
   line-height: 1.5;
   border: none;
   outline: none;
-  
 }
 /* start container_form and Map */
 .container {
@@ -161,5 +160,21 @@ html {
 .map {
   width: 470px;
   height: 936px;
-  
 }
+
+.gm-ui-hover-effect {
+  visibility: hidden;
+}
+.gm-style-iw-tc {
+  display: none;
+}
+.gm-svpc {
+  display: none;
+}
+.gmnoprint{
+  visibility: hidden;
+}
+.gm-style-cc{
+  display: none;
+}
+/* End Googl map */
