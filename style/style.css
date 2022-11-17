@@ -1,0 +1,165 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+  
+}
+/* start container_form and Map */
+.container {
+  background-color: #ffffff;
+}
+.container__form {
+  max-width: 1440px;
+  max-height: 1500px;
+}
+/* End container */
+
+/* Start Form */
+.form {
+  max-width: 630px;
+  max-height: 974px;
+}
+
+/* End Form */
+
+/* Start Header Form */
+.header__h1 {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1a1a1a;
+}
+.header__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+}
+/* End Header form */
+
+/* Start castom selector */
+.select {
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  /* display: flex;
+  align-items: center; */
+  cursor: pointer;
+}
+
+.select__size_s {
+  max-width: 299px;
+  max-height: 64px;
+}
+.select__size_b {
+  max-width: 628px;
+  max-height: 64px;
+}
+
+.select.is-active .select__body {
+  display: block;
+}
+.select__header {
+  display: flex;
+  padding: 10px;
+}
+.select__current {
+  font-size: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  color: #414042;
+  opacity: 0.5;
+  line-height: 24px;
+  padding: 8px;
+  display: flex;
+}
+.select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  color: #414042;
+  opacity: 0.5;
+  justify-content: center;
+  height: 40px;
+  margin-left: auto;
+  text-align: center;
+  width: 40px;
+}
+.select__body {
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 90%;
+}
+.select__item {
+  /* font-family: "Inter";
+  font-weight: 400;
+  font-style: normal; */
+  font-size: 16px;
+  color: #424242;
+  cursor: pointer;
+  line-height: 24px;
+  margin-left: 15px;
+  margin-bottom: 13px;
+}
+.select__item:hover {
+  background-color: #f2f2f2;
+  padding: 7px;
+}
+/* End Selector */
+
+/* Start input */
+.input {
+  width: 299px;
+  height: 64px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+  border-radius: 8px;
+  padding: 15px;
+}
+.input_size_normal {
+  width: 299px;
+  height: 64px;
+}
+.input__size__b {
+  width: 630px;
+  height: 338px;
+}
+/* End Input */
+
+/* Start Submit */
+.submit {
+  width: 221.22px;
+  height: 57px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  color: #ffffff;
+}
+/* End Submit */
+
+/* Start Googl Map */
+.map {
+  width: 470px;
+  height: 936px;
+  
+}
