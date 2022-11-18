@@ -11,25 +11,37 @@ html {
   border: none;
   outline: none;
 }
+
 /* start container_form and Map */
 .container {
   background-color: #ffffff;
+  max-width: 1440px;
 }
 .container__form {
-  max-width: 1440px;
-  max-height: 1500px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 630px 470px;
+  grid-column-gap: 40px;
+  grid-auto-rows: minmax(400px, auto);
+  justify-content: center;
 }
+
 /* End container */
 
 /* Start Form */
 .form {
-  max-width: 630px;
-  max-height: 974px;
+  display: grid;
+  grid-gap: 33px;
 }
 
 /* End Form */
 
 /* Start Header Form */
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
 .header__h1 {
   font-family: "Avenir Next";
   font-style: normal;
@@ -54,22 +66,21 @@ html {
   position: relative;
   box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
   border-radius: 8px;
-  /* display: flex;
-  align-items: center; */
   cursor: pointer;
 }
 
 .select__size_s {
-  max-width: 299px;
-  max-height: 64px;
+  width: 299px;
+  height: 64px;
 }
 .select__size_b {
-  max-width: 628px;
-  max-height: 64px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .select.is-active .select__body {
   display: block;
+  z-index: 3;
 }
 .select__header {
   display: flex;
@@ -108,9 +119,6 @@ html {
   top: 90%;
 }
 .select__item {
-  /* font-family: "Inter";
-  font-weight: 400;
-  font-style: normal; */
   font-size: 16px;
   color: #424242;
   cursor: pointer;
@@ -136,9 +144,9 @@ html {
   border-radius: 8px;
   padding: 15px;
 }
-.input_size_normal {
-  width: 299px;
-  height: 64px;
+.input__size_div {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .input__size__b {
   width: 630px;
@@ -157,10 +165,6 @@ html {
 /* End Submit */
 
 /* Start Googl Map */
-.map {
-  width: 470px;
-  height: 936px;
-}
 
 .gm-ui-hover-effect {
   visibility: hidden;
@@ -171,10 +175,14 @@ html {
 .gm-svpc {
   display: none;
 }
-.gmnoprint{
+.gmnoprint {
   visibility: hidden;
 }
-.gm-style-cc{
+.gm-style-cc {
   display: none;
 }
+.gm-fullscreen-control {
+   display: none;
+}
 /* End Googl map */
+/* @import url(./moder-styles.css); */

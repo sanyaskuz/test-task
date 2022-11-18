@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" media="only screen and (color)" href="style/moder-styles.css" />
-  <title>Document</title>
+  <link rel="stylesheet" media="only screen and (max-width: 1200px)" href="style/moder-styles.css" />
+  <title>test-task</title>
 </head>
 
 <body>
@@ -20,11 +20,11 @@
 
       </header>
 
-      <div>
-        <input type="text" class="input input_size_normal" placeholder="Full Name*">
+      <div class="input_size_normal">
+        <input type="text" class="input input__size_s" placeholder="Full Name*">
       </div>
-      <div>
-        <input type="text" class="input" placeholder="Title/Position*">
+      <div class="input_size_normal">
+        <input type="text" class="input input_size_normal" placeholder="Title/Position*">
       </div>
 
 
@@ -44,15 +44,15 @@
         </div>
       </div>
 
-      <div>
+      <div class="input_size_normal">
         <input type="email" class="input" placeholder="Email Address*">
       </div>
 
-      <div>
-        <input type="tel" class="input" placeholder="Phone Number*">
+      <div class="input_size_normal">
+        <input type="tel" class="input " placeholder="Phone Number*">
       </div>
 
-      <div class="select select__size_s ">
+      <div class="select select__size_s">
 
         <div class="select__header">
           <span class="select__current">Medical Profession*</span>
@@ -68,7 +68,7 @@
         </div>
       </div>
 
-      <div class="select select__size_b ">
+      <div class="select select__size_b">
 
         <div class="select__header">
           <span class="select__current">Type of Inquiry*</span>
@@ -85,8 +85,8 @@
       </div>
 
 
-      <div>
-        <input type="text" class="input input__size__b">
+      <div class="div input__size_div">
+        <input type="text" class="input input__size__b ">
       </div>
 
       <div>
@@ -95,7 +95,6 @@
     </form>
 
     <div class="map">
-
     </div>
 
 
@@ -104,9 +103,9 @@
 
   <script src="script/app.js"></script>
   <script async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap">
-</script>
- 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap">
+    </script>
+
 </body>
 
 </html>
